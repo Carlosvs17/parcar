@@ -29,10 +29,12 @@ public class Car
     public static void main(String[] args) throws InterruptedException{
     	Garage g = new Garage();
     	Car car = new Car(g);
+    	//He añadido car. delante de los metodos en los que faltaba.
         car.accelerate();
         car.slowDown();
         car.moveDown();
         car.accelerate();
+        // A printGarage le he creado un metodo para que funcione.
         car.printGarage();
 //        turnRight();
 //        turnHeadlightsOn();
@@ -48,6 +50,7 @@ public class Car
      * @throws InterruptedException 
      */
     public void accelerate() throws InterruptedException{
+    	//Los Strings estaban escritos con la primera en minuscula y tiene que ser mayuscula
         String c = new String("*");
         String space = new String(" ");
     	for(int i=0; i<5; i++)
@@ -63,7 +66,10 @@ public class Car
      * @throws InterruptedException 
      */
     public void slowDown() throws InterruptedException{
+    	//Los Strings estaban escritos con la primera en minuscula y tiene que ser mayuscula y 
+    	//habia un parentesis de mas al final
     	String c = new String("     *");
+    	//Habían puesto comas simples en el for en vez de punto y coma
     	for(int i=0; i<5; i++)
         {
         	System.out.print(c);
